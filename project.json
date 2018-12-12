@@ -1,0 +1,8 @@
+{
+    "name": "inspec-lambda",
+    "description": "",
+    "runtime": "ruby2.5",
+    "role": "arn:aws:iam::706621479219:role/inspec_lambda_role",
+    "defaultEnvironment": "dev",
+    "nameTemplate": "{{.Project.Name}}_{{.Function.Name}}"
+}
