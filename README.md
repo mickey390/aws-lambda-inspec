@@ -24,7 +24,7 @@
 
 - local pc : macOS(10.14.1)
 - function deploy : [apex](https://github.com/apex/apex)
-- Sample spec : Is some aws bucket exist?
+- Sample spec : [Is some aws bucket exist?](https://github.com/mickey390/aws-lambda-inspec/blob/master/functions/dev/spec/s3_spec.rb)
 
 ## library download
 
