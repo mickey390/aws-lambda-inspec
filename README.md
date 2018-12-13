@@ -1,4 +1,4 @@
-# OVERVIEW
+# overview
 
 - Exec Sample [Inspec](https://www.inspec.io/) testing on AWS Lambda
 
@@ -22,7 +22,11 @@
 └── project.json // apex conf
 ```
 
-## library donwload
+- local pc : macOS(10.14.1)
+- function deploy : [apex](https://github.com/apex/apex)
+- Sample spec : Is some aws bucket exist?
+
+## library download
 
 ```
 [local] docker run -it -v "$PWD":/var/task lambci/lambda:build-ruby2.5 bash
@@ -42,9 +46,14 @@ apex infra plan -target=module.iam
 apex infra apply -target=module.iam
 ```
 
-## deploy function to AWS Lambda (by apex)
+## deploy & invoke function to AWS Lambda (by apex)
 
 ```
-apex deploy dev
+# deploy
+[local] apex deploy dev
+# invoke
+[local] apex invoke dev
+# show logs
+[local] apex logs
 ```
 
